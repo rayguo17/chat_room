@@ -1,0 +1,28 @@
+<template>
+  <require from="./styles.css"></require>
+  <h1 class="text-5xl">${message}</h1>
+  <!-- router -->
+  <div class="border">
+    <ul repeat.for="nav of router.navigation">
+      <li class="${nav.isActive ? 'text-blue-600' : ''}" href="nav.href">
+        <a href="${nav.href}">${nav.title}</a>
+        </li>
+    </ul>
+  </div>
+  
+  <router-view></router-view>
+
+  <!-- <ul>
+    <li repeat.for="todo of todos">
+      <input type="checkbox" name="done" checked.bind="todo.done">
+      <span css="text-decoration: ${todo.done ? 'line-through' : 'none'}">
+        ${todo.description}
+      </span>
+      <button click.trigger="removeTodo(todo)" disabled.bind="!todoDescription">Remove</button>
+    </li>
+  </ul>
+  <form submit.trigger="addTodo()">
+    <input type="text" name="description" value.bind="todoDescription">
+    <button type="submit">add</button>
+  </form> -->
+</template>

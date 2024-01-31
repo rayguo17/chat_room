@@ -1,0 +1,24 @@
+<template>
+    <require from="../components/todo-list"></require>
+    <require from="../components/todo-form"></require>
+<div>
+    <h1>This is Todo Page</h1>
+    <div class="w-full h-screen bg-gray-100 pt-8">
+        <div class="bg-white p-3 max-w-md mx-auto">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold">ToDo App</h1>
+                <todo-form todo-description.bind="todoDescription"></todo-form>
+            </div>
+            <todo-list></todo-list>
+            <div class="mt-8">
+                <button 
+                    class="border-2 border-red-500 hover:text-white p-2 text-red-500 hover:bg-red-500"
+                >Clear Completed Task</button>
+                <button 
+                    class="border-2 border-indigo-500 hover:text-white hover:bg-blue-500 p-2 text-indigo-500 ml-4"
+                >Reset Todo List</button>
+            </div>
+        </div>    
+    </div>
+</div>
+</template>
