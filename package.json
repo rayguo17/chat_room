@@ -8,10 +8,17 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "aurelia-animator-css": "^1.0.4",
     "aurelia-bootstrapper": "^2.4.0",
     "aurelia-event-aggregator": "^1.0.3",
     "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3",
+    "font-awesome": "^4.7.0",
+    "gulp-changed-in-place": "^2.3.0",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1",
     "postcss-loader": "^8.0.0"
   },
   "devDependencies": {

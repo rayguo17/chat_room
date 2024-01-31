@@ -1,6 +1,11 @@
 import { NPM } from 'aurelia-cli';
+import * as gulp  from 'gulp';
+import { preProcessFile } from 'typescript';
+import prepareFontAwesome from './prepare-font-awesome';
 
-export default function() {
+
+
+let build = function() {
   console.log('`au build` is an alias of the `npm run build:dev`, you may use either of those; see README for more details.');
   const args = process.argv.slice(3);
   return (new NPM()).run('run', ['build:dev', '--', ... cleanArgs(args)]);
@@ -22,3 +27,8 @@ function cleanArgs(args) {
   }
   return cleaned;
 }
+export default gulp.series(
+  prepareFontAwesome,
+  build,
+
+)

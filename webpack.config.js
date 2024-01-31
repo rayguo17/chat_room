@@ -21,16 +21,17 @@ const baseUrl = '/';
 const cssRules = [
   {
     loader: 'css-loader'
-  },{
-    loader:'postcss-loader',
-    options:{
-      postcssOptions:{
-        plugins:[
-          require('tailwindcss')('tailwind.config.js')
-        ]
-      }
-    }
-  }
+  },
+  // {
+  //   loader:'postcss-loader',
+  //   options:{
+  //     postcssOptions:{
+  //       plugins:[
+  //         require('tailwindcss')('tailwind.config.js')
+  //       ]
+  //     }
+  //   }
+  // }
 ];
 
 
