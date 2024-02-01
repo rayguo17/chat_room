@@ -5,7 +5,7 @@ type Todo = {
 }
 
 type ChatRoom= {
-    chatid:number,
+    room_id:string,
     historyMessage:Array<ChatMessage>
 }
 
@@ -13,11 +13,8 @@ type ChatMessage = {
     timestamp:number
     content:ChatContent|string, //dynamic type picture or text
     type:ChatMessageTypeEnum,
-    
-}
-
-export class NetworkMsg{
-
+    user_id:string, // name of user,
+    room_id:string
 }
 
 

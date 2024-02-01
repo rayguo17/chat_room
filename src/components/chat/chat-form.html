@@ -1,0 +1,26 @@
+<template>
+    <div class="mt-1 d-flex justify-content-center">
+    
+        <div class="container-md d-flex justify-content-center">
+            <div class="w-50">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Channel Name</label>
+                    <input type="text" value.bind="channelName" class="form-control"  placeholder="channel name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Nickname</label>
+                    <input type="name" value.bind="username" class="form-control"  placeholder="nickname">
+                  </div>
+                  <div class="w-100 d-flex justify-content-center">
+                    
+                    <button if.bind="chatState.isInited" click.trigger="handleJoin()" type="button" class="btn btn-primary btn-lg btn3d"><span class="glyphicon glyphicon-cloud"></span> Join</button>
+                    <div else class="spinner-border text-primary" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                  </div>
+                  
+            </div>
+            
+        </div>
+    </div>
+</template>
